@@ -1,5 +1,4 @@
 const db = require('../util/database');
-const jwt = require('jsonwebtoken');
 const validator = require('validator');
 const cloudinary = require('../config/cloudinary');
 
@@ -49,8 +48,6 @@ const processDeleteCloudinary = async (url) => {
         console.log(err);
     }
 }
-
-// DEV branch created
 
 const resolvers = {
     RootQuery: {
